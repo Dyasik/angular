@@ -104,11 +104,11 @@ To understand how change detection works, first consider when the application ne
 
 1. Component initialization. For example, when bootstrapping an Angular application, Angular loads the bootstrap component and triggers the [ApplicationRef.tick()](api/core/ApplicationRef#tick) to call change detection and View Rendering.
 
-1. Event listener. The DOM event listener can update the data in an Angular component and also trigger change detection, as in the following example.
+2. Event listener. The DOM event listener can update the data in an Angular component and also trigger change detection, as in the following example.
 
 <code-example path="user-input/src/app/click-me.component.ts" region="click-me-component" header="src/app/click-me.component.ts"></code-example>
 
-1. HTTP Data Request. You can also get data from a server through an HTTP request. For example:
+3. HTTP Data Request. You can also get data from a server through an HTTP request. For example:
 
 ```typescript
 @Component({
